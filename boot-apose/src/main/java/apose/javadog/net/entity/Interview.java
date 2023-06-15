@@ -12,4 +12,5 @@ public class Interview {
 
     private List<WorkExperience> workExperiences;
 
+    private Recommend recommend;
 }

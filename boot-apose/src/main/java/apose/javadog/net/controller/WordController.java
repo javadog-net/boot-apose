@@ -1,9 +1,6 @@
 package apose.javadog.net.controller;
 
-import apose.javadog.net.entity.BaseInfo;
-import apose.javadog.net.entity.Education;
-import apose.javadog.net.entity.Interview;
-import apose.javadog.net.entity.WorkExperience;
+import apose.javadog.net.entity.*;
 import cn.hutool.core.util.CharsetUtil;
 import com.aspose.words.Document;
 import com.aspose.words.DocumentBuilder;
@@ -82,6 +79,7 @@ public class WordController {
         this.getBaseInfo(interview);
         this.getEducations(interview);
         this.getWorkExperiences(interview);
+        this.getRecommend(interview);
         return interview;
     }
 
@@ -136,6 +134,7 @@ public class WordController {
                 .setProfessional("计算机科学与技术")
                 .setEducationalForm("本科");
         educations.add(educationUniversity);
+
         interview.setEducations(educations);
     }
 
@@ -157,4 +156,38 @@ public class WordController {
         workExperiences.add(workExperience);
         interview.setWorkExperiences(workExperiences);
     }
+
+    /**
+     * @Description: 组装科室意见
+     * @Param: [interview]
+     * @return: [apose.javadog.net.entity.Interview]
+     * @Author: hdx
+     * @Date: 2022/5/10 15:40
+     */
+    private void getRecommend(Interview interview){
+        // 科室意见
+        Recommend Recommend = new Recommend();
+        interview.setRecommend(Recommend);
+        List<President> presidents = new ArrayList<>();
+        this.getPresident(presidents);
+        Recommend.setListPresident(presidents);
+    }
+
+
+    private void getPresident(List<President> presidents){
+        President p1 = new President();
+        p1.setName("张院长");
+        p1.setSuggest("非常满意");
+        presidents.add(p1);
+        President p2 = new President();
+        p2.setName("王院长");
+        p2.setSuggest("非常满意");
+        presidents.add(p2);
+        President p3 = new President();
+        p3.setName("李院长");
+        p3.setSuggest("一般");
+        presidents.add(p3);
+    }
+
+
 }
