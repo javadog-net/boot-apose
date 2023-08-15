@@ -1,4 +1,3 @@
-## 我正在参加「掘金·启航计划」
 ### 前言
 #### ⏲️本文阅读时长：约10分钟
 #### 🎯主要目标：
@@ -9,7 +8,7 @@
 ##### 2.List循环赋值
 ##### 3.图片插入
 ##### 4.对勾特殊符号插入
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/69a561b0ee644ca5a23cb72368767555~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/69a561b0ee644ca5a23cb72368767555_tplv-k3u1fbpfcp-zoom-1.png)
 ***
 ### 干货代码
 #### 源码
@@ -27,18 +26,18 @@
 
 ***
 ### 结果预览
-![请添加图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f3668bed24e2478fbe0b39f192d7c0b4~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/f3668bed24e2478fbe0b39f192d7c0b4_tplv-k3u1fbpfcp-zoom-1.gif)
 #### 模板填充前空word模板
-![我还是没有放下你](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3b073c52d76a4e22bf387097930ab37a~tplv-k3u1fbpfcp-zoom-1.image)
+![我还是没有放下你](https://img.javadog.net/blog/boot-apose/3b073c52d76a4e22bf387097930ab37a_tplv-k3u1fbpfcp-zoom-1.png)
 #### 代码填充后word模板
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d7bd4a1109d44ea1bfeacc50a6c88ec1~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/d7bd4a1109d44ea1bfeacc50a6c88ec1_tplv-k3u1fbpfcp-zoom-1.png)
 
 
 #### web端vue预览的html的pdf
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38ca3cfa035644f18ba78c32594de775~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/38ca3cfa035644f18ba78c32594de775_tplv-k3u1fbpfcp-zoom-1.png)
 
 #### 最终填充后下载的pdf
-![爱你不只是说说而已](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1323d7afb9834ca6bd6aec3031d086d9~tplv-k3u1fbpfcp-zoom-1.image)
+![爱你不只是说说而已](https://img.javadog.net/blog/boot-apose/1323d7afb9834ca6bd6aec3031d086d9_tplv-k3u1fbpfcp-zoom-1.png)
 ***
 ### 技术涉及
 #### 💁‍♂️后端框架
@@ -71,7 +70,7 @@
 ###### 1.下载对应的[aspose-words-19.1-jdk16.jar](https://download.csdn.net/download/baidu_25986059/85390408)，加入POM本地依赖
 > 因原版收费且会有水印等不确定因素，直接下载jar包本地依赖或者上传私服
 > 
-![我还在原地等你](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e94b5ffa28274c209ec93949e8904679~tplv-k3u1fbpfcp-zoom-1.image)
+![我还在原地等你](https://img.javadog.net/blog/boot-apose/e94b5ffa28274c209ec93949e8904679_tplv-k3u1fbpfcp-zoom-1.png)
 ```xml
  <!-- 本地依赖 aspose-words-->
         <dependency>
@@ -84,26 +83,29 @@
         </dependency>
 ```
 ###### 2.放置模板文件到资源路径下
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5542432dbdd34b16a590c6bdfcc94162~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/5542432dbdd34b16a590c6bdfcc94162_tplv-k3u1fbpfcp-zoom-1.png)
+
 ###### 3.controller读取模板文件并填充数据
  1. 读取模板并将输入流转为doc,并设置文件名及返回类型
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cfc2569f87de41ac8d560d41fb79a104~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/cfc2569f87de41ac8d560d41fb79a104_tplv-k3u1fbpfcp-zoom-1.png)
  2. 定位【照片】书签位置，插入图片
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7331f8344084209ba998cd89715c1da~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/b7331f8344084209ba998cd89715c1da_tplv-k3u1fbpfcp-zoom-1.png)
  3. 定位【等级】书签位置，插入对应字符
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7e7325aa214e43798ae5c42d410834be~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/7e7325aa214e43798ae5c42d410834be_tplv-k3u1fbpfcp-zoom-1.png)
 书签插入参考如下
 -  找到需要插入的图片的地方，鼠标焦点聚焦
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/590aa9ef106e445ca4182bff578528fb~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/590aa9ef106e445ca4182bff578528fb_tplv-k3u1fbpfcp-zoom-1.png)
 
 -  点击【插入】找到书签并点击,然后录入书签名，并点击添加
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9fe6ac4ed92c4c63a97c6feaedb37bbf~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://img.javadog.net/blog/boot-apose/9fe6ac4ed92c4c63a97c6feaedb37bbf_tplv-k3u1fbpfcp-zoom-1.png)
 -  检查书签是否添加成功
 
  - 更新doc
- ![-](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0e95af09890b4ef8b5bf2a50163fccda~tplv-k3u1fbpfcp-zoom-1.image)
+
+ ![](https://img.javadog.net/blog/boot-apose/0e95af09890b4ef8b5bf2a50163fccda_tplv-k3u1fbpfcp-zoom-1.png)
   - 将基础数据填充后并转为PDF
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e109811ac0b14e3591e36e67ed785e17~tplv-k3u1fbpfcp-zoom-1.image)
+
+![](https://img.javadog.net/blog/boot-apose/0e95af09890b4ef8b5bf2a50163fccda_tplv-k3u1fbpfcp-zoom-1.png)
 > 详见如下代码
 ```java
 package apose.javadog.net.controller;
@@ -457,5 +459,5 @@ button {
 #### 1.vue-pdf原版与webpack版本问题，会启动不起来，所以本狗才偷梁换柱，改了一下并自用
 #### 2.aspose-words-19.1-jdk16.jar 如果采用官网的maven依赖，可能需要自助破解或交费使用
 ### 成果展示
-![请添加图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a345cf59b3344fffbc60120226bc9f77~tplv-k3u1fbpfcp-zoom-1.image)
-我是JavaDog，谢谢博友耐心看完, 抽空来我狗窝🐕瞅瞅呗 [blog.javadog.net](https://blog.javadog.net)，关注我的微信公众号有惊喜哦╰(*°▽°*)╯！
+![](https://img.javadog.net/blog/boot-apose/a345cf59b3344fffbc60120226bc9f77_tplv-k3u1fbpfcp-zoom-1.gif)
+我是JavaDog，谢谢博友耐心看完, 抽空来我狗窝🐕瞅瞅呗 [www.javadog.net](https://www.javadog.net)，关注我的微信公众号有惊喜哦╰(*°▽°*)╯！
